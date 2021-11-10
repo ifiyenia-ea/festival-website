@@ -1,5 +1,13 @@
+body {
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+    background-color: black;
+}
+
 .food__main {
     max-width: 100%;
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,6 +15,7 @@
     &-food {
         max-width: 63.3%;
         box-sizing: border-box;
+        margin-top: 15px;
         display: flex;
         justify-content: space-between;
         margin-top: 20px;
@@ -19,11 +28,12 @@
             max-width: 100%;
             min-height: 10vh; 
             border-radius: 10px;
+            margin-top: 10px;
         }
 
         a {
             text-decoration: none;
-            color: black;
+            color: white;
         }
 
         a:hover {
