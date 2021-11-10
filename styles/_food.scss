@@ -1,0 +1,33 @@
+.food__main {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    &-food {
+        max-width: 63.3%;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        &--container-blocks {
+            max-width: 45%;
+            box-sizing: border-box;
+        }
+        
+        &--photo {
+            max-width: 100%;
+            min-height: 10vh; 
+            border-radius: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            color: blue;
+        }
+    }
+}
