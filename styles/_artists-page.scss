@@ -1,11 +1,122 @@
-body {
-    background-image: 
+.body {
+    color: white;
+
+    &-01 {
+        background-image: 
         linear-gradient(
-        rgba(0, 0, 0, 0.65), 
-        rgba(0, 0, 0, 0.65)
+        rgba(0, 0, 0, 0.68), 
+        rgba(0, 0, 0, 0.68)
         ),
         url(../images/artists/artist-01.jpg);
-    color: white;
+    }
+    
+    &-02 {
+        background-image: 
+        linear-gradient(
+        rgba(0, 0, 0, 0.68), 
+        rgba(0, 0, 0, 0.68)
+        ),
+        url(../images/artists/artist-02.jpg);
+    }
+
+    &-03 {
+        background-image: 
+        linear-gradient(
+        rgba(0, 0, 0, 0.68), 
+        rgba(0, 0, 0, 0.68)
+        ),
+        url(../images/artists/artist-03.jpg);
+    }
+
+    &-04 {
+        background-image: 
+        linear-gradient(
+        rgba(0, 0, 0, 0.68), 
+        rgba(0, 0, 0, 0.68)
+        ),
+        url(../images/artists/artist-04.jpg);
+    }
+
+    &-05 {
+        background-image: 
+        linear-gradient(
+        rgba(0, 0, 0, 0.68), 
+        rgba(0, 0, 0, 0.68)
+        ),
+        url(../images/artists/artist-05.jpg);
+    }
+
+    &-06 {
+        background-image: 
+        linear-gradient(
+        rgba(0, 0, 0, 0.68), 
+        rgba(0, 0, 0, 0.68)
+        ),
+        url(../images/artists/artist-06.jpg);
+    }
+
+    &-07 {
+        background-image: 
+        linear-gradient(
+        rgba(0, 0, 0, 0.68), 
+        rgba(0, 0, 0, 0.68)
+        ),
+        url(../images/artists/artist-07.jpg);
+    }
+
+    &-08 {
+        background-image: 
+        linear-gradient(
+        rgba(0, 0, 0, 0.68), 
+        rgba(0, 0, 0, 0.68)
+        ),
+        url(../images/artists/artist-08.jpg);
+    }
+
+    &-09 {
+        background-image: 
+        linear-gradient(
+        rgba(0, 0, 0, 0.68), 
+        rgba(0, 0, 0, 0.68)
+        ),
+        url(../images/artists/artist-09.jpg);
+    }
+
+    &-10 {
+        background-image: 
+        linear-gradient(
+        rgba(0, 0, 0, 0.68), 
+        rgba(0, 0, 0, 0.68)
+        ),
+        url(../images/artists/artist-10.jpg);
+    }
+
+    &-11 {
+        background-image: 
+        linear-gradient(
+        rgba(0, 0, 0, 0.68), 
+        rgba(0, 0, 0, 0.68)
+        ),
+        url(../images/artists/artist-11.jpg);
+    }
+
+    &-12 {
+        background-image: 
+        linear-gradient(
+        rgba(0, 0, 0, 0.68), 
+        rgba(0, 0, 0, 0.68)
+        ),
+        url(../images/artists/artist-12.jpg);
+    }
+
+    &-13 {
+        background-image: 
+        linear-gradient(
+        rgba(0, 0, 0, 0.68), 
+        rgba(0, 0, 0, 0.68)
+        ),
+        url(../images/artists/artist-13.jpg);
+    }
 
 }
 

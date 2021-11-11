@@ -75,27 +75,3 @@ body {
     }
 
 }
-
-
-.artist-page__main {
-    background-image: url(../images/artists/artist-01.jpg);
-    background-size: cover;
-    background-color: rgba($color: #000000, $alpha: 0.9);
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-
-
-    &-info {
-        display: grid;
-        grid-template-columns: repeat(2, 50%);
-    }
-
-
-
-}
-
-.artist-page-img {
-    max-height: 100vh;
-    height: 100%;
-    position: sticky;
-}
