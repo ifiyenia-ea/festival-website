@@ -1,5 +1,15 @@
 .body {
     color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; // or maybe not?
+
+    /*
+    
+    sort background images, maybe B/W?
+    see which to mirror
+
+    */
 
     &-01 {
         background-image: 
@@ -52,7 +62,7 @@
         rgba(0, 0, 0, 0.68), 
         rgba(0, 0, 0, 0.68)
         ),
-        url(../images/artists/artist-06.jpg);
+        url(../images/artists/artist-06-bg.jpg);
     }
 
     &-07 {
@@ -61,7 +71,7 @@
         rgba(0, 0, 0, 0.68), 
         rgba(0, 0, 0, 0.68)
         ),
-        url(../images/artists/artist-07.jpg);
+        url(../images/artists/artist-07-bg.jpg);
     }
 
     &-08 {
@@ -70,7 +80,8 @@
         rgba(0, 0, 0, 0.68), 
         rgba(0, 0, 0, 0.68)
         ),
-        url(../images/artists/artist-08.jpg);
+        url(../images/artists/artist-08-bg.jpg);
+   
     }
 
     &-09 {
@@ -88,7 +99,7 @@
         rgba(0, 0, 0, 0.68), 
         rgba(0, 0, 0, 0.68)
         ),
-        url(../images/artists/artist-10.jpg);
+        url(../images/artists/artist-10-bg.jpg);
     }
 
     &-11 {
@@ -115,7 +126,7 @@
         rgba(0, 0, 0, 0.68), 
         rgba(0, 0, 0, 0.68)
         ),
-        url(../images/artists/artist-13.jpg);
+        url(../images/artists/artist-13-bg.jpg);
     }
 
 }
