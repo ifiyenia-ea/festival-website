@@ -1,3 +1,9 @@
+$pink: #EE4266;
+$yellow: #FFD23F;
+$green: #59C9A5;
+$logo-font: 'Akronim', cursive;
+$body-font: 'Baloo Bhai 2', cursive;
+
 body {
     max-width: 1440px;
     width: 100%;
@@ -5,26 +11,26 @@ body {
     background-color: black;
 }
 
-.food__main {
+.food-main {
     max-width: 100%;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    &-food {
-        max-width: 63.3%;
+    &__food {
+        max-width: 70%;
         box-sizing: border-box;
         margin-top: 15px;
         display: flex;
         justify-content: space-between;
         margin-top: 20px;
-        &--container-blocks {
+        &-container-blocks {
             max-width: 45%;
             box-sizing: border-box;
         }
         
-        &--photo {
+        &-photo {
             max-width: 100%;
             min-height: 10vh; 
             border-radius: 10px;
@@ -37,7 +43,7 @@ body {
         }
 
         a:hover {
-            color: blue;
+            color: $green;
         }
     }
 }
