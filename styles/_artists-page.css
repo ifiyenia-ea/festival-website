@@ -1,0 +1,27 @@
+body {
+  background-image: url(../images/artists/artist-01.jpg);
+  background-size: cover;
+  color: white;
+}
+
+.artist-page__main {
+  max-height: 100vh;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (50%)[2];
+  grid-template-columns: repeat(2, 50%);
+}
+.artist-page__main-info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (50%)[2];
+  grid-template-columns: repeat(2, 50%);
+}
+
+.artist-page-img {
+  max-height: 700px;
+  height: 100%;
+  position: sticky;
+}
