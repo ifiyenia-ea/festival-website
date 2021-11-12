@@ -1,14 +1,59 @@
+h1 {
+  font-family: "Akronim", cursive;
+}
+
+h3 {
+  font-family: "Baloo Bhai 2", cursive;
+}
+
+p {
+  font-family: "Baloo Bhai 2", cursive;
+}
+
 .body {
   color: white;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  -webkit-animation: breath 60s alternate;
+          animation: breath 60s alternate;
   /*
 
   sort background images, maybe B/W?
   see which to mirror
 
   */
+}
+@-webkit-keyframes breath {
+  0% {
+    background-size: 200% auto;
+  }
+  100% {
+    background-size: 100% auto;
+  }
+}
+@keyframes breath {
+  0% {
+    background-size: 200% auto;
+  }
+  100% {
+    background-size: 100% auto;
+  }
+}
+@-webkit-keyframes shrink {
+  0% {
+    background-size: 300% 300%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+@keyframes shrink {
+  0% {
+    background-size: 300% 300%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
 }
 .body-01 {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.68)), to(rgba(0, 0, 0, 0.68))), url(../images/artists/artist-01.jpg);
@@ -120,6 +165,31 @@
   grid-column: 2/3;
   -ms-grid-row-align: center;
       align-self: center;
+}
+.artist-page__main-title {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+.artist-page__main-info {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
+  text-align: justify;
+}
+.artist-page__main-link {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+}
+.artist-page__main a {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.artist-page__main a:hover {
+  color: #59C9A5;
 }
 
 .artist-page-img {

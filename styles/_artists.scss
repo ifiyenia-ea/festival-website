@@ -1,9 +1,40 @@
+$pink: #EE4266;
+$yellow: #FFD23F;
+$green: #59C9A5;
+
+$logo-font: 'Akronim', cursive;
+$body-font: 'Baloo Bhai 2', cursive;
+
+h1 {
+    font-family: $logo-font;
+}
+
+h3 {
+    font-family: $body-font;
+}
+
+p {
+    font-family: $body-font;
+}
+
+
 body {
     max-width: 1440px;
     width: 100%;
     margin: auto;
     background-color: black;
     color: white;
+}
+
+.body-artists {
+    background-image: 
+        linear-gradient(
+        rgba(0, 0, 0, 0.68), 
+        rgba(0, 0, 0, 0.68)
+        ),
+        url(../images/general/audience-2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .artists__main {
@@ -60,16 +91,16 @@ body {
 
                 &:hover {
                     color: #59C9A5;
-                    transform: scale(1.1);
                 }            
             }
 
             img {
                 transition: 0.3s ease-in-out;
+                box-shadow: 10px 20px 50px 3px rgba(0, 0, 0, 0.5);
             }
 
             img:hover {
-                transform: scale(1.01);
+                transform: scale(1.03);
 
             }
     }

@@ -1,8 +1,30 @@
+$pink: #EE4266;
+$yellow: #FFD23F;
+$green: #59C9A5;
+
+$logo-font: 'Akronim', cursive;
+$body-font: 'Baloo Bhai 2', cursive;
+
+h1 {
+    font-family: $logo-font;
+}
+
+h3 {
+    font-family: $body-font;
+}
+
+p {
+    font-family: $body-font;
+}
+
+
+
 .body {
     color: white;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; // or maybe not?
+    // background-position: center; // or maybe not?
+    animation: breath 60s alternate;
 
     /*
     
@@ -10,6 +32,21 @@
     see which to mirror
 
     */
+
+    @keyframes breath {
+        0%   { background-size: 200% auto; }
+    //    50% { background-size: 100% auto; }
+        100% { background-size: 100% auto; }
+      }
+
+    @keyframes shrink {
+        0% {
+          background-size: 300% 300%;
+        }
+        100% {
+          background-size: 100% 100%;
+        }
+      }
 
     &-01 {
         background-image: 
@@ -143,6 +180,32 @@
         grid-column: 2 / 3;
         align-self: center;
     }
+
+    &-title {
+        grid-row: 1 / 2;
+    }
+
+    &-info {
+        grid-row: 2 / 4;
+        text-align: justify;
+    }
+
+    &-link {
+        grid-row: 4 / 5;
+    }
+
+
+    a {
+        text-decoration: none;
+        color: white;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+            color: #59C9A5;
+        }            
+    }
+
+
 }
 
 .artist-page-img {
