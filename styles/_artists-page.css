@@ -14,14 +14,6 @@ p {
   color: white;
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-animation: breath 60s alternate;
-          animation: breath 60s alternate;
-  /*
-
-  sort background images, maybe B/W?
-  see which to mirror
-
-  */
 }
 @-webkit-keyframes breath {
   0% {
@@ -37,22 +29,6 @@ p {
   }
   100% {
     background-size: 100% auto;
-  }
-}
-@-webkit-keyframes shrink {
-  0% {
-    background-size: 300% 300%;
-  }
-  100% {
-    background-size: 100% 100%;
-  }
-}
-@keyframes shrink {
-  0% {
-    background-size: 300% 300%;
-  }
-  100% {
-    background-size: 100% 100%;
   }
 }
 .body-01 {
@@ -108,79 +84,13 @@ p {
   background-image: linear-gradient(rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)), url(../images/artists/artist-13-bg.jpg);
 }
 
-.artist-page__main {
-  max-height: 100vh;
-  height: 100%;
-  max-width: 60%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (50%)[2];
-  grid-template-columns: repeat(2, 50%);
-  -ms-grid-rows: (25%)[4];
-  grid-template-rows: repeat(4, 25%);
-}
-
-.artist-page__main > *:nth-child(1) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-}
-
-.artist-page__main > *:nth-child(2) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-}
-
-.artist-page__main > *:nth-child(3) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-}
-
-.artist-page__main > *:nth-child(4) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-}
-
-.artist-page__main > *:nth-child(5) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-}
-
-.artist-page__main > *:nth-child(6) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-}
-
-.artist-page__main > *:nth-child(7) {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-}
-
-.artist-page__main > *:nth-child(8) {
-  -ms-grid-row: 4;
-  -ms-grid-column: 2;
-}
 .artist-page__main .txt {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-  -ms-grid-row-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
       align-self: center;
 }
-.artist-page__main-title {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
-}
 .artist-page__main-info {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 2;
-  grid-row: 2/4;
   text-align: justify;
-}
-.artist-page__main-link {
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 1;
-  grid-row: 4/5;
 }
 .artist-page__main a {
   text-decoration: none;
@@ -192,11 +102,189 @@ p {
   color: #59C9A5;
 }
 
-.artist-page-img {
-  max-height: 100vh;
-  height: 100%;
-  position: sticky;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 4;
-  grid-row: 1/5;
+@media screen and (min-width: 1001px) {
+  .artist-img-small {
+    visibility: hidden;
+  }
+
+  .body {
+    -webkit-animation: breath 60s alternate;
+            animation: breath 60s alternate;
+  }
+
+  .artist-page__main {
+    max-height: 100vh;
+    height: 100%;
+    max-width: 60%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (50%)[2];
+    grid-template-columns: repeat(2, 50%);
+    -ms-grid-rows: (25%)[4];
+    grid-template-rows: repeat(4, 25%);
+  }
+
+  .artist-page__main > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .artist-page__main > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+
+  .artist-page__main > *:nth-child(3) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+
+  .artist-page__main > *:nth-child(4) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+
+  .artist-page__main > *:nth-child(5) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+
+  .artist-page__main > *:nth-child(6) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+  }
+
+  .artist-page__main > *:nth-child(7) {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+  }
+
+  .artist-page__main > *:nth-child(8) {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+  }
+  .artist-page__main .txt {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .artist-page__main-title {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  .artist-page__main-info {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    grid-row: 2/4;
+    text-align: justify;
+  }
+  .artist-page__main-link {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+  }
+  .artist-page__main a {
+    text-decoration: none;
+    color: white;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+  .artist-page__main a:hover {
+    color: #59C9A5;
+  }
+
+  .artist-page-img {
+    max-height: 100vh;
+    height: 100%;
+    z-index: -1;
+    position: sticky;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 4;
+    grid-row: 1/5;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .artist-page-img {
+    visibility: hidden;
+  }
+
+  .artist-img-small {
+    border-radius: 50%;
+    max-width: 50%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+
+  .artist-page__main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  .body {
+    padding: 25px;
+  }
+  .body-01 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.68)), to(rgba(0, 0, 0, 0.68))), url(../images/artists/artist-page-01.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)), url(../images/artists/artist-page-01.jpg);
+  }
+  .body-02 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.68)), to(rgba(0, 0, 0, 0.68))), url(../images/artists/artist-page-02.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)), url(../images/artists/artist-page-02.jpg);
+  }
+  .body-03 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.68)), to(rgba(0, 0, 0, 0.68))), url(../images/artists/artist-page-03.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)), url(../images/artists/artist-page-03.jpg);
+  }
+  .body-04 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.68)), to(rgba(0, 0, 0, 0.68))), url(../images/artists/artist-page-04.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)), url(../images/artists/artist-page-04.jpg);
+  }
+  .body-05 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.68)), to(rgba(0, 0, 0, 0.68))), url(../images/artists/artist-page-05.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)), url(../images/artists/artist-page-05.jpg);
+  }
+  .body-06 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.68)), to(rgba(0, 0, 0, 0.68))), url(../images/artists/artist-page-06.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)), url(../images/artists/artist-page-06.jpg);
+  }
+  .body-07 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.68)), to(rgba(0, 0, 0, 0.68))), url(../images/artists/artist-page-07.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)), url(../images/artists/artist-page-07.jpg);
+  }
+  .body-08 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.68)), to(rgba(0, 0, 0, 0.68))), url(../images/artists/artist-page-08.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)), url(../images/artists/artist-page-08.jpg);
+  }
+  .body-09 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.68)), to(rgba(0, 0, 0, 0.68))), url(../images/artists/artist-page-09.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)), url(../images/artists/artist-page-09.jpg);
+  }
+  .body-10 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.68)), to(rgba(0, 0, 0, 0.68))), url(../images/artists/artist-page-10.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)), url(../images/artists/artist-page-10.jpg);
+  }
+  .body-11 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.68)), to(rgba(0, 0, 0, 0.68))), url(../images/artists/artist-page-11.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)), url(../images/artists/artist-page-11.jpg);
+  }
+  .body-12 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.68)), to(rgba(0, 0, 0, 0.68))), url(../images/artists/artist-page-12.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)), url(../images/artists/artist-page-12.jpg);
+  }
+  .body-13 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.68)), to(rgba(0, 0, 0, 0.68))), url(../images/artists/artist-page-13.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)), url(../images/artists/artist-page-13.jpg);
+  }
 }
