@@ -1,4 +1,6 @@
-body {
+@use 'colors';
+
+.indiv-food-body {
     background-image: 
         linear-gradient(
         rgba(0, 0, 0, 0.68), 
@@ -6,7 +8,6 @@ body {
         ),
         url(../../images/food/foodtruck-backgr.jpg);
     color: white;
-
 }
 
 .food-page__main {
@@ -17,18 +18,28 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(4, 25%);
+    h1 {
+        font-family: colors.$body-font;
+        font-size: colors.$body-font-heading-size;
+    }
 
     .txt {
         grid-column: 2 / 3;
         align-self: center;
-        h3 {
+        p {
+            font-family: colors.$body-font;
+            font-size: colors.$body-font-subpage-text-size;
+            line-height: $body-font-subpage-text-line-height;
             transform: translateY(-60%);
         }
     }
     
     .back-link {
+        justify-self: flex-start;
         transform: translateY(-50%);
         a {
+            font-family: colors.$body-font;
+            font-size: colors.$body-font-subpage-text-size;
             color: white;
             text-decoration: none;
             transition: 0.3s ease-in-out;
