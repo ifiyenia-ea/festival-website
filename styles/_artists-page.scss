@@ -18,10 +18,12 @@ p {
 }
 
 
-.body {
+.body-artist {
     color: white;
     background-repeat: no-repeat;
     background-size: cover;
+    max-height: 100vh;
+    height: 100%;
 
     @keyframes breath {
         0%   { background-size: 200% auto; }
@@ -176,7 +178,7 @@ p {
         visibility: hidden;
     }
 
-    .body {
+    .body-artist {
     animation: breath 60s alternate;
     }
 
@@ -243,7 +245,7 @@ p {
         justify-content: flex-start;
     }
 
-    .body {        
+    .body-artist {        
         padding: 25px;
 
         &-01 {
