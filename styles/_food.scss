@@ -1,8 +1,10 @@
-$pink: #EE4266;
-$yellow: #FFD23F;
-$green: #59C9A5;
-$logo-font: 'Akronim', cursive;
-$body-font: 'Baloo Bhai 2', cursive;
+// $pink: #EE4266;
+// $yellow: #FFD23F;
+// $green: #59C9A5;
+// $logo-font: 'Akronim', cursive;
+// $body-font: 'Baloo Bhai 2', cursive;
+
+@use 'colors';
 
 body {
     max-width: 1440px;
@@ -13,12 +15,16 @@ body {
 
 .food-main {
     max-width: 100%;
-    background-color: black;
+    // background-color: black;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    h1 {
+        font-size: colors.$logo-font-subpage-size; 
+    }
+
     &__food {
         max-width: 70%;
         box-sizing: border-box;
@@ -42,6 +48,16 @@ body {
             }
         }
 
+        &-name {
+            font-family: colors.$body-font;
+            font-size: colors.$body-font-heading-size;
+        }
+
+        &-info {
+            font-family: colors.$body-font;
+            font-size: colors.$body-font-text-size;
+        }
+
         a {
             text-decoration: none;
             color: white;
@@ -49,7 +65,7 @@ body {
         }
 
         a:hover {
-            color: $green;
+            color: colors.$green;
             transform: scale(1.1);
         }
     }
