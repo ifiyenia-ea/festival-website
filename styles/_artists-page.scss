@@ -5,12 +5,14 @@ $green: #59C9A5;
 $logo-font: 'Akronim', cursive;
 $body-font: 'Baloo Bhai 2', cursive;
 
-h1 {
+.artist-page__main-title {
     font-family: $logo-font;
+    font-size: 50px;
 }
 
-h3 {
+.artist-h3 {
     font-family: $body-font;
+    font-size: 17;
 }
 
 p {
