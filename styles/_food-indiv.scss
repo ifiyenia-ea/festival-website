@@ -1,0 +1,51 @@
+body {
+    background-image: 
+        linear-gradient(
+        rgba(0, 0, 0, 0.68), 
+        rgba(0, 0, 0, 0.68)
+        ),
+        url(../../images/food/foodtruck-backgr.jpg);
+    color: white;
+
+}
+
+.food-page__main {
+    max-height: 100vh;
+    height: 100%;
+    // min-height: 100vh;
+    max-width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(4, 25%);
+
+    .txt {
+        grid-column: 2 / 3;
+        align-self: center;
+        h3 {
+            transform: translateY(-60%);
+        }
+    }
+    
+    .back-link {
+        transform: translateY(-50%);
+        a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s ease-in-out;
+        }
+
+        a:hover {
+            color: $green;
+        }
+    }
+}
+
+.food-page-img {
+    // max-height: 100vh;
+    // height: 100%;
+    min-height: 100vh;
+    max-width: 95%;
+    position: sticky;
+    grid-row: 1 / 5;
+
+}

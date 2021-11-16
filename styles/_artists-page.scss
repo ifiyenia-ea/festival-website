@@ -1,0 +1,374 @@
+$pink: #EE4266;
+$yellow: #FFD23F;
+$green: #59C9A5;
+
+$logo-font: 'Akronim', cursive;
+$body-font: 'Baloo Bhai 2', cursive;
+
+h1 {
+    font-family: $logo-font;
+}
+
+h3 {
+    font-family: $body-font;
+}
+
+p {
+    font-family: $body-font;
+}
+
+
+.body-artist {
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    max-height: 100vh;
+    height: 100%;
+
+    
+    @keyframes breath {
+        0%   { background-size: 200% auto; }
+        100% { background-size: 100% auto; }
+      }
+
+
+
+    &-01 {
+        background-image: 
+        linear-gradient(
+        rgba(0, 0, 0, 0.68), 
+        rgba(0, 0, 0, 0.68)
+        ),
+        url(../images/artists/artist-01.jpg);
+    }
+    
+    &-02 {
+        background-image: 
+        linear-gradient(
+        rgba(0, 0, 0, 0.68), 
+        rgba(0, 0, 0, 0.68)
+        ),
+        url(../images/artists/artist-02.jpg);
+    }
+
+    &-03 {
+        background-image: 
+        linear-gradient(
+        rgba(0, 0, 0, 0.68), 
+        rgba(0, 0, 0, 0.68)
+        ),
+        url(../images/artists/artist-03.jpg);
+    }
+
+    &-04 {
+        background-image: 
+        linear-gradient(
+        rgba(0, 0, 0, 0.68), 
+        rgba(0, 0, 0, 0.68)
+        ),
+        url(../images/artists/artist-04.jpg);
+    }
+
+    &-05 {
+        background-image: 
+        linear-gradient(
+        rgba(0, 0, 0, 0.68), 
+        rgba(0, 0, 0, 0.68)
+        ),
+        url(../images/artists/artist-05.jpg);
+    }
+
+    &-06 {
+        background-image: 
+        linear-gradient(
+        rgba(0, 0, 0, 0.68), 
+        rgba(0, 0, 0, 0.68)
+        ),
+        url(../images/artists/artist-06-bg.jpg);
+    }
+
+    &-07 {
+        background-image: 
+        linear-gradient(
+        rgba(0, 0, 0, 0.68), 
+        rgba(0, 0, 0, 0.68)
+        ),
+        url(../images/artists/artist-07-bg.jpg);
+    }
+
+    &-08 {
+        background-image: 
+        linear-gradient(
+        rgba(0, 0, 0, 0.68), 
+        rgba(0, 0, 0, 0.68)
+        ),
+        url(../images/artists/artist-08-bg.jpg);
+   
+    }
+
+    &-09 {
+        background-image: 
+        linear-gradient(
+        rgba(0, 0, 0, 0.68), 
+        rgba(0, 0, 0, 0.68)
+        ),
+        url(../images/artists/artist-09.jpg);
+    }
+
+    &-10 {
+        background-image: 
+        linear-gradient(
+        rgba(0, 0, 0, 0.68), 
+        rgba(0, 0, 0, 0.68)
+        ),
+        url(../images/artists/artist-10-bg.jpg);
+    }
+
+    &-11 {
+        background-image: 
+        linear-gradient(
+        rgba(0, 0, 0, 0.68), 
+        rgba(0, 0, 0, 0.68)
+        ),
+        url(../images/artists/artist-11.jpg);
+    }
+
+    &-12 {
+        background-image: 
+        linear-gradient(
+        rgba(0, 0, 0, 0.68), 
+        rgba(0, 0, 0, 0.68)
+        ),
+        url(../images/artists/artist-12.jpg);
+    }
+
+    &-13 {
+        background-image: 
+        linear-gradient(
+        rgba(0, 0, 0, 0.68), 
+        rgba(0, 0, 0, 0.68)
+        ),
+        url(../images/artists/artist-13-bg.jpg);
+    }
+
+}
+
+.artist-page__main {
+    .txt {
+        align-self: center;
+    }
+
+    &-info {
+        text-align: justify;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+            color: #59C9A5;
+        }            
+    }
+}
+
+
+@media screen and (min-width: 1001px) { 
+
+    .artist-img-small {
+        visibility: hidden;
+    }
+
+    .body-artist {
+    animation: breath 60s alternate;
+    }
+
+    .artist-page__main {
+        max-height: 100vh;
+        height: 100%;
+        max-width: 60%;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(4, 25%);
+    
+        .txt {
+            grid-column: 2 / 3;
+            align-self: center;
+        }
+    
+        &-title {
+            grid-row: 1 / 2;
+        }
+    
+        &-info {
+            grid-row: 2 / 4;
+            text-align: justify;
+        }
+    
+        &-link {
+            grid-row: 4 / 5;
+        }
+    
+        a {
+            text-decoration: none;
+            color: white;
+            transition: 0.3s ease-in-out;
+    
+            &:hover {
+                color: #59C9A5;
+            }            
+        }
+    }
+    
+    .artist-page-img {
+        max-height: 100vh;
+        height: 100%;
+        z-index: -1;
+        position: sticky;
+        grid-row: 1 / 5;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .artist-page-img {
+        visibility: hidden;
+    }
+
+    .artist-img-small {
+        border-radius: 50%;
+        max-width: 50%;
+        align-self: center;
+    }
+
+    .artist-page__main {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .body-artist {        
+        padding: 25px;
+
+        &-01 {
+            background-image: 
+            linear-gradient(
+            rgba(0, 0, 0, 0.68), 
+            rgba(0, 0, 0, 0.68)
+            ),
+            url(../images/artists/artist-page-01.jpg);
+        }
+        
+        &-02 {
+            background-image: 
+            linear-gradient(
+            rgba(0, 0, 0, 0.68), 
+            rgba(0, 0, 0, 0.68)
+            ),
+            url(../images/artists/artist-page-02.jpg);
+        }
+    
+        &-03 {
+            background-image: 
+            linear-gradient(
+            rgba(0, 0, 0, 0.68), 
+            rgba(0, 0, 0, 0.68)
+            ),
+            url(../images/artists/artist-page-03.jpg);
+        }
+    
+        &-04 {
+            background-image: 
+            linear-gradient(
+            rgba(0, 0, 0, 0.68), 
+            rgba(0, 0, 0, 0.68)
+            ),
+            url(../images/artists/artist-page-04.jpg);
+        }
+    
+        &-05 {
+            background-image: 
+            linear-gradient(
+            rgba(0, 0, 0, 0.68), 
+            rgba(0, 0, 0, 0.68)
+            ),
+            url(../images/artists/artist-page-05.jpg);
+        }
+    
+        &-06 {
+            background-image: 
+            linear-gradient(
+            rgba(0, 0, 0, 0.68), 
+            rgba(0, 0, 0, 0.68)
+            ),
+            url(../images/artists/artist-page-06.jpg);
+        }
+    
+        &-07 {
+            background-image: 
+            linear-gradient(
+            rgba(0, 0, 0, 0.68), 
+            rgba(0, 0, 0, 0.68)
+            ),
+            url(../images/artists/artist-page-07.jpg);
+        }
+    
+        &-08 {
+            background-image: 
+            linear-gradient(
+            rgba(0, 0, 0, 0.68), 
+            rgba(0, 0, 0, 0.68)
+            ),
+            url(../images/artists/artist-page-08.jpg);
+       
+        }
+    
+        &-09 {
+            background-image: 
+            linear-gradient(
+            rgba(0, 0, 0, 0.68), 
+            rgba(0, 0, 0, 0.68)
+            ),
+            url(../images/artists/artist-page-09.jpg);
+        }
+    
+        &-10 {
+            background-image: 
+            linear-gradient(
+            rgba(0, 0, 0, 0.68), 
+            rgba(0, 0, 0, 0.68)
+            ),
+            url(../images/artists/artist-page-10.jpg);
+        }
+    
+        &-11 {
+            background-image: 
+            linear-gradient(
+            rgba(0, 0, 0, 0.68), 
+            rgba(0, 0, 0, 0.68)
+            ),
+            url(../images/artists/artist-page-11.jpg);
+        }
+    
+        &-12 {
+            background-image: 
+            linear-gradient(
+            rgba(0, 0, 0, 0.68), 
+            rgba(0, 0, 0, 0.68)
+            ),
+            url(../images/artists/artist-page-12.jpg);
+        }
+    
+        &-13 {
+            background-image: 
+            linear-gradient(
+            rgba(0, 0, 0, 0.68), 
+            rgba(0, 0, 0, 0.68)
+            ),
+            url(../images/artists/artist-page-13.jpg);
+        }
+    
+    }
+
+}
