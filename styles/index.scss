@@ -4,9 +4,11 @@
 @import 'media';
 @import 'food';
 @import 'food-indiv';
+@import 'artists';
+@import 'artists-page';
 
 
-body {
+.body-landing {
     background-image: 
     /* top, transparent red */
     linear-gradient(

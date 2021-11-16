@@ -8,10 +8,37 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Akronim&family=Baloo+Bhai+2:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../styles/normalize.css">
-    <link rel="stylesheet" href="../../styles/_artists-page.css">
+    <link rel="stylesheet" href="../../styles/index.css">
+
     <title>KATHLEEN GRIFFIN</title>
 </head>
-<body class="body-artist body-artist-05">    
+<body class="body-artist body-artist-05">  
+        
+    <nav class="topnav" id="myTopnav">
+        <div class="topnav__links">
+            <a class="topnav__link" href="../../landing.html">Home</a>
+            <a class="topnav__link" href="../artists.html">Line-Up</a>
+            <a class="topnav__link" href="../food.html">Food</a>
+            <a class="topnav__link" href="../../styles/contact.html">Contact</a>
+            <a href="javascript:void(0);" class="topnav__icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <img class="topnav__yellow" src="../../images/Untitled-2.png">
+    </nav> 
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+    </script>
+
+
     <section class="artist-page__main">
         <img src="../../images/artists/artist-page-05.jpg" alt="" class="artist-page-img">
 
@@ -46,6 +73,17 @@
             <a href="../artists.html" class="artist-page__main-link txt"><p>Back to Artists Page</p></a>
     </section>
 
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__logo">JINGLE<br>FIESTA</div>
+            <div class="footer__links">
+                <a href="../../landing.html" class="footer__link">Home</a>
+                <a href="../artists.html" class="footer__link">Line-Up</a>
+                <a href="../food.html" class="footer__link">Food</a>
+                <a href="../../styles/contact.html" class="footer__link">Contact</a>
+            </div>
+        </div> 
+    </footer>
 
 </body>
 </html>
