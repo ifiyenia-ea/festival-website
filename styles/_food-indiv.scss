@@ -1,18 +1,22 @@
 @use 'colors';
 
 .indiv-food-body {
+    // height: 100vh;
+    min-height: 100vh;    
     background-image: 
         linear-gradient(
         rgba(0, 0, 0, 0.68), 
         rgba(0, 0, 0, 0.68)
         ),
         url(../../images/food/foodtruck-backgr.jpg);
+        // background-size: 100vw 100vh;
     color: white;
+    align-items: flex-start;
 }
 
 .food-page__main {
-    max-height: 100vh;
-    height: 100%;
+    max-height: 80vh;
+    // height: 100%;
     // min-height: 100vh;
     max-width: 60%;
     display: grid;
@@ -21,6 +25,7 @@
     h1 {
         font-family: colors.$body-font;
         font-size: colors.$body-font-heading-size;
+        transform: translateY(-50%);
     }
 
     .txt {
@@ -30,12 +35,13 @@
             font-family: colors.$body-font;
             font-size: colors.$body-font-subpage-text-size;
             line-height: $body-font-subpage-text-line-height;
-            transform: translateY(-60%);
+            transform: translateY(-50%);
         }
     }
     
     .back-link {
         justify-self: flex-start;
+        grid-column: 2 / 3;
         transform: translateY(-50%);
         a {
             font-family: colors.$body-font;
@@ -46,17 +52,21 @@
         }
 
         a:hover {
-            color: $green;
+            color: colors.$green;
         }
     }
 }
 
 .food-page-img {
-    // max-height: 100vh;
+    max-height: 100vh;
+    // min-height: 100vh;
     // height: 100%;
-    min-height: 100vh;
     max-width: 95%;
-    position: sticky;
-    grid-row: 1 / 5;
+    // position: fixed;
+    // left: 0;
+    // grid-row: 1 / 5;
+}
 
+.footer.footer-food-indiv {
+    margin-top: 0;
 }
