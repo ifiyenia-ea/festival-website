@@ -60,7 +60,7 @@ h2 {
     justify-content: center;
 
     &__container { 
-        width: 80%;
+        width: 90%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -73,13 +73,13 @@ h2 {
        align-items: center;
        align-items: flex-start;
        width: 185px;
-       height: 52px;
+       height: 42px;
        flex-wrap: wrap;
    }
 
    &__link {
        font-family: $body-font;
-       font-size: 12pt;
+       font-size: 10pt;
        font-weight: 300;
    }
 
