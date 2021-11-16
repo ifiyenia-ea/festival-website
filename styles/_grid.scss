@@ -13,8 +13,10 @@ a {
 	font-family: $logo-font;
 	text-decoration: none;
 	font-size: 30pt;
+	font-size: 3vw;
 	color: white;
 	opacity: 1;
+	text-align: center;
 }
 
 .pic { 
@@ -122,8 +124,8 @@ a {
 
 .sev {
     grid-column: 5 / 8;
-    grid-row: 8 / 11;
-    background-image: url(../images/artists/artist-10.jpg);
+    grid-row: 8 / 13;
+    background-image: url(../images/artists/artist-13.jpg);
 	background-size: 100%;
 	background-clip: border-box;
 	background-position: center;
