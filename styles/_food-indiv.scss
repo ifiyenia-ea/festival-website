@@ -59,9 +59,10 @@
 
 .food-page-img {
     max-height: 100vh;
+    z-index: -1;
     // min-height: 100vh;
     // height: 100%;
-    max-width: 95%;
+    //max-width: 95%; 
     // position: fixed;
     // left: 0;
     // grid-row: 1 / 5;

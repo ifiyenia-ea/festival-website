@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Baloo+Bhai+2&family=Baloo+Thambi+2&family=Poppins&family=Source+Sans+Pro&display=swap');
+@import 'colors';
+@import 'media';
+
 $pink: #EE4266;
 $yellow: #FFD23F;
 $green: #59C9A5;
@@ -10,12 +13,68 @@ $green: #59C9A5;
     font-family: 'Baloo Bhai 2', cursive;
 }
 
+
+    .topnav { 
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    align-items: center; 
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 5%;
+
+    &__links {
+        width: 380px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 50px;
+    }
+
+    &__link:hover { 
+        color: $yellow;
+    }
+
+    &__link { 
+    font-family: $body-font;
+    text-transform: uppercase;
+    font-size: 11pt;
+    font-weight: 500;
+    z-index: 1;
+    text-decoration: none;
+    color: white;
+    }
+
+    &__yellow { 
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 49px;
+        overflow: hidden;
+    }
+
+    &__icon {
+        display: none;
+    }
+}
+
 body{
-   background-image: url(../images/general/audience-2.jpg);
-   background-size: cover;
+   
+    background-image: 
+        linear-gradient(
+      rgba(18, 5, 39, 0.6), 
+      rgba(0, 0, 0, 0.87)
+    ),
+    url(../images/general/audience-5.jpg);
+    /*background-image: url(../images/general/audience-2.jpg);
+   background-size: cover;*/
    background-repeat: no-repeat;
    position: relative;
-   padding: 40px 100px;
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
    
 }
 .content{
@@ -27,7 +86,11 @@ body{
         
         h1{
             text-align: center;
-            font-size: 3rem;    
+            font-size: 5vw;   
+            font-family: $logo-font;
+            color: white;
+            font-weight: 100;
+
         }
 
         
@@ -43,7 +106,9 @@ body{
     "form info"
     "form map";
     grid-gap: 30px;
-    margin-top: auto;
+    margin-top: 5%;
+    width: 80%;
+    align-self: center;
     
 }
 .contact{
@@ -57,9 +122,12 @@ body{
     h2{
         text-align: center;
         font-size: 2rem;
+        color: white;
     }
     h3{
         font-size: 1.25rem;
+        color: white;
+        font-weight: 200;
     }
     .box{
         display: flex;
@@ -94,15 +162,16 @@ body{
     .submit{
         background: $pink;
         font-size: 1.25rem;
-        font-weight: 500;
+        font-weight: 300;
         border: none;
         max-width: 120px;
         cursor: pointer;
         padding: 14px 15px;
         float: right;
         border-radius: 1rem;
+        color: white;
         &:hover{
-            color: $green;
+            color: $yellow;
         }
     }
     ::placeholder{
@@ -113,6 +182,7 @@ body{
 .info{
     h1{
         text-align: center;
+        color: white;
 
     }
     .item{
@@ -135,9 +205,12 @@ body{
         h3{
     
             font-size: 1.5em;
+            color: white;
+            font-weight: 200;
         }
         p{
             font-size: 1.25em;
+            color: white;
         }
     }
 }
@@ -190,3 +263,49 @@ iframe{
 }
 
 
+.footer {
+    background-color: $green;
+    width: 100%;
+    height: 100px;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+
+    &__container { 
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+   &__links {
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       align-items: center;
+       align-items: flex-start;
+       width: 185px;
+       height: 42px;
+       flex-wrap: wrap;
+   }
+
+   &__link {
+       font-family: $body-font;
+       font-size: 10pt;
+       font-weight: 300;
+       text-decoration: none;
+       color: white;
+
+   }
+
+   &__link:hover {
+       color: $yellow;
+   }
+
+   &__logo { 
+    font-family: $logo-font;
+    color: white; 
+    font-weight: 100;
+    text-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+   }
+}
