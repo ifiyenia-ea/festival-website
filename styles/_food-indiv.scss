@@ -62,7 +62,8 @@
     z-index: -1;
     // min-height: 100vh;
     // height: 100%;
-    //max-width: 95%; 
+    // OBS! 95% only local on my machine - width: 100% on the main on GitHub!
+    max-width: 100%; 
     // position: fixed;
     // left: 0;
     // grid-row: 1 / 5;
@@ -70,4 +71,6 @@
 
 .footer.footer-food-indiv {
     margin-top: 0;
+    position: fixed;
+    bottom: 0;
 }
