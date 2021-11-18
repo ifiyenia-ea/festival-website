@@ -1,16 +1,18 @@
-// $pink: #EE4266;
-// $yellow: #FFD23F;
-// $green: #59C9A5;
-// $logo-font: 'Akronim', cursive;
-// $body-font: 'Baloo Bhai 2', cursive;
-
 @use 'colors';
 
 body {
     max-width: 1440px;
     width: 100%;
     margin: auto;
-    background-color: black;
+    background-image: 
+    /* top, transparent red */
+    linear-gradient(
+      rgba(18, 5, 39, 0.6), 
+      rgba(0, 0, 0, 0.87)
+    ),
+    /* your image */
+    url(../images/general/audience-3.jpg);
+    background-attachment: fixed;
 }
 
 .food-main {
@@ -69,4 +71,22 @@ body {
             transform: scale(1.1);
         }
     }
+}
+
+@media screen and (max-width: 600px) {
+    .food-main__food {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-name {
+            font-size: colors.$body-font-heading-size-small;
+            align-self: flex-start;
+        }
+
+        &-info {
+            font-size: colors.$body-font-subpage-text-size-small;
+            line-height: colors.$body-font-subpage-text-line-height;
+        }
+    }   
 }
