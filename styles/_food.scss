@@ -10,7 +10,15 @@ body {
     max-width: 1440px;
     width: 100%;
     margin: auto;
-    background-color: black;
+    background-image: 
+    /* top, transparent red */
+    linear-gradient(
+      rgba(18, 5, 39, 0.6), 
+      rgba(0, 0, 0, 0.87)
+    ),
+    /* your image */
+    url(../images/general/audience-3.jpg);
+    background-attachment: fixed;
 }
 
 .food-main {

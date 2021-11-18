@@ -1,15 +1,14 @@
 @use 'colors';
 
 .indiv-food-body {
-    // height: 100vh;
-    min-height: 100vh;    
+    max-height: 100vh;
+    // min-height: 100vh;    
     background-image: 
         linear-gradient(
         rgba(0, 0, 0, 0.68), 
         rgba(0, 0, 0, 0.68)
         ),
         url(../../images/food/foodtruck-backgr.jpg);
-        // background-size: 100vw 100vh;
     color: white;
     align-items: flex-start;
 }
@@ -26,12 +25,14 @@
         font-family: colors.$body-font;
         font-size: colors.$body-font-heading-size;
         transform: translateY(-50%);
+        margin-left: 25px;
     }
 
     .txt {
         grid-column: 2 / 3;
         align-self: center;
         p {
+            margin-left: 25px;
             font-family: colors.$body-font;
             font-size: colors.$body-font-subpage-text-size;
             line-height: $body-font-subpage-text-line-height;
@@ -40,6 +41,7 @@
     }
     
     .back-link {
+        margin-left: 25px;
         justify-self: flex-start;
         grid-column: 2 / 3;
         transform: translateY(-50%);
@@ -58,15 +60,11 @@
 }
 
 .food-page-img {
-    max-height: 100vh;
-    z-index: -1;
+    height: 80vh;
     // min-height: 100vh;
     // height: 100%;
-    // OBS! 95% only local on my machine - width: 100% on the main on GitHub!
-    max-width: 100%; 
-    // position: fixed;
-    // left: 0;
-    // grid-row: 1 / 5;
+    max-width: 100%;     
+    z-index: -1;
 }
 
 .footer.footer-food-indiv {
