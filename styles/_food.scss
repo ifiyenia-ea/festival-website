@@ -1,7 +1,6 @@
 @use 'colors';
 
 body {
-    max-width: 1440px;
     width: 100%;
     margin: auto;
     background-image: 
@@ -12,19 +11,22 @@ body {
     ),
     /* your image */
     url(../images/general/audience-3.jpg);
-    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .food-main {
-    max-width: 100%;
-    // background-color: black;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     h1 {
-        font-size: colors.$logo-font-foodpage-size; 
+        font-family: $logo-font;
+        color: white; 
+        font-size: 7vw;
+        font-weight: 100;
+        text-shadow: 0px 3px 15px rgba(0,0,0,0.2);
     }
 
     &__food {
